@@ -39,6 +39,7 @@ Important: The authors of the paper originally run the model using a R Studio 2.
 CODE DESCRIPTION
 
 There is only one code file. The code first updates the datasets and generate the basic matrices needed for the modeling exercise. Then the code calculates the results. Later, the code structures the results for data visualization. In the end, the code generates the analysis which integrate the Annex A of the Manuscript. 
+There are no "raw outputs" to be displayed. Raw outputs are all generated as data frames with the R code. The figures are an output of the Flourish tool and are all visible in Final Manuscript.pdf. The code explicitly generates the inputs needed for each Figure in sequence. 
 
 FOLDER STRUCTURE
 
