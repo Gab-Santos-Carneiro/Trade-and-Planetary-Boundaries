@@ -9,7 +9,7 @@ The original code was written to work in the R Studio 2.1.19 version from the On
 The code here provided is an adaptation of the original code that should run in a local environment. Consequently, the authors were not able to completely test this code (this is particularly true for the section "0 - Loading data and basic matrices"). As they didn't have access to any computer that had the computational requirements needed to run the code locally. 
 However, the authors carefully reviewed the code and they believe it should run normally in a local environment given that computational capacity is enough. 
 
-DATA AVAILABILIYY 
+DATA AVAILABILITY 
 
 You can obtain the dataset for free by registering and requesting it in the website: https://ielab.info/resources/gloria. It usually takes some hours to get their approval and it is free. 
 The authors employed the version Release 57. Now they are at Release 59 and the Release 57 is not available anymore for download. Nevertheless, there shouldn't be siginificant differences in the results as the 58 and 59 releases were more oriented towards adding for information to the dataset rather than changing values. 
