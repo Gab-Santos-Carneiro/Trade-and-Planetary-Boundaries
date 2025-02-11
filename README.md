@@ -27,7 +27,8 @@ INSTRUCTIONS FOR REPLICATORS
 
 1 - Download the datasets and add them to the R project repository. 
 2 - Run the code and generate the results and the inputs needed to generate the figures. 
-3 - Access the Flourish tool and recreate the figures. Flourish has some sort of "in-built excel sheets" that need to be manually filled in order to generate the figures. Use the output from R as an input in Flourish. 
+3 - Access the Flourish tool and recreate the figures. Flourish has some sort of "in-built excel sheets" that need to be manually filled in order to generate the figures. Use the output from R as an input in Flourish. The R code is divided in sections for each figure generated in Flourish. You just need to go to "New Visualization" and find a similar template to the original figure in our paper and copy-paste the data frame output in the "in-built excel sheet" in the tab named "data". Figure 1 is a "bar chart (stacked %)". Figure 2 is a "column chart (grouped)". Figure 3 is a series of "Sankey diagrams". Figure 4 is a series of "radar charts". 
+
 Important: The authors of the paper originally run the model using a R Studio 2.1.19 version from the Onyxia - SSP Cloud Datalab and a cloud storage service. The authors are unable to run the codes in their personal computers because of computational requirements. Therefore, they were not able to completely test the "0 - Loading data and basic matrices" section of the code. Some changes to the code might be needed in this part in order to run it.
 
 REQUIREMENTS
