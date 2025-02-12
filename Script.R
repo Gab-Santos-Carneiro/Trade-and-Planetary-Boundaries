@@ -4,7 +4,7 @@
 # This is an adapted script and, unfortunately, we were not able to test it as our personal computers are not able to handle such amount of data
 # The files of the GLORIA database can be downloaded from: https://ielab.info/labs/ielab-gloria  You need to register and then
 # download the "GLORIA_ReadMe_xxx.xlsx" file and the "GLORIA_MRIOs_59_2021.zip" file which is located inside the folder "GLORIA_MRIO_Loop059_part_I_MRIOdatabase"
-# inside the google drive.
+# inside the google drive. You also need to download the file "GLORIA_SatelliteAccounts_059_2021" which is located inside the folder "GLORIA_MRIO_Loop059_part_III_satelliteaccounts". 
 
 # 0 - Loading data and basic matrices --------------------------------------------------------
 
