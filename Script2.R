@@ -138,6 +138,13 @@ for (i in 1:164) {
 }
 
 # Coefficient matrix and Leontief
+
+iIO <- apply(IO,2,FUN=sum)
+xin <- iIO+apply(VA,2,FUN=sum)
+for (i in 1:nrow(IO)) {
+  xin[i] <- max(x[i],xin[i],iIO[i]/0.9)
+}
+
 A <- t(t(IO)/(xin+10^(-6)))
 L <- solve(diag(ncol(A))-A)
 
