@@ -57,23 +57,23 @@ set_wd <- getwd()
 
 V <- read.csv(file.path(set_wd, paste0("20230320_120secMother_AllCountries_002_V-Results_", 
                                        year, "_057_Markup001(full).csv")),
-              fileEncoding = "UTF-8")
+              fileEncoding = "UTF-8", header = FALSE)
 
 Y <- read.csv(file.path(set_wd, paste0("20230315_120secMother_AllCountries_002_Y-Results_", 
                                        year, "_057_Markup001(full).csv")),
-              fileEncoding = "UTF-8")
+              fileEncoding = "UTF-8", header = FALSE)
 
 Q <- read.csv(file.path(set_wd, paste0("20230310_120secMother_AllCountries_002_TQ-Results_", 
                                        year, "_057_Markup001(full).csv")),
-              fileEncoding = "UTF-8")
+              fileEncoding = "UTF-8", header = FALSE)
 
 QY <- read.csv(file.path(set_wd, paste0("20230310_120secMother_AllCountries_002_YQ-Results_", 
                                         year, "_057_Markup001(full).csv")),
-               fileEncoding = "UTF-8")
+               fileEncoding = "UTF-8", header = FALSE)
 
 T <- read.csv(file.path(set_wd, paste0("20230315_120secMother_AllCountries_002_T-Results_", 
                                        year, "_057_Markup001(full).csv")),
-              fileEncoding = "UTF-8")
+              fileEncoding = "UTF-8", header = FALSE)
 
 # Creating matrices
 
