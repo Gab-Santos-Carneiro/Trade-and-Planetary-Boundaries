@@ -154,19 +154,19 @@ L <- solve(diag(ncol(A))-A)
 
 
 # Creating footprint intensity, direct
-Q2 <- as.matrix(Q[2864,])/(x+0.00001) # GHG Emissions (EDGAR)
-Q2 <- cbind(Q2,apply(Q[68:73,],2,FUN=sum)/(x+0.00001)) # Land use
-Q2 <- cbind(Q2,apply(Q[80:85,],2,FUN=sum)/(x+0.00001)) # Biodiversity loss
-Q2 <- cbind(Q2,apply(Q[86:87,],2,FUN=sum)/(x+0.00001)) # Water stress
-Q2 <- cbind(Q2,apply(Q[88:89,],2,FUN=sum)/(x+0.00001)) # Blue water consumption
-Q2 <- cbind(Q2,apply(Q[1:62,],2,FUN=sum)/(x+0.00001)) # Material use, total
-Q2 <- cbind(Q2,apply(Q[74:79,],2,FUN=sum)/(x+0.00001)) # Energy, total
+Q2 <- as.matrix(QT[2864,])/(x+0.00001) # GHG Emissions (EDGAR)
+Q2 <- cbind(Q2,apply(QT[68:73,],2,FUN=sum)/(x+0.00001)) # Land use
+Q2 <- cbind(Q2,apply(QT[80:85,],2,FUN=sum)/(x+0.00001)) # Biodiversity loss
+Q2 <- cbind(Q2,apply(QT[86:87,],2,FUN=sum)/(x+0.00001)) # Water stress
+Q2 <- cbind(Q2,apply(QT[88:89,],2,FUN=sum)/(x+0.00001)) # Blue water consumption
+Q2 <- cbind(Q2,apply(QT[1:62,],2,FUN=sum)/(x+0.00001)) # Material use, total
+Q2 <- cbind(Q2,apply(QT[74:79,],2,FUN=sum)/(x+0.00001)) # Energy, total
 
 colnames(Q2)[1:2] <- c("GHG_Emissions","Land_use")
 colnames(Q2)[3:7] <- as.matrix(label_Q[c(80,86,88,1,74),1])
 
 # Use of fertilizer minerals in agriculture
-Fertilizers <- as.vector(Q[43,]/(x+0.00001))*L # Embodied fertilzers matrix
+Fertilizers <- as.vector(QT[43,]/(x+0.00001))*L # Embodied fertilzers matrix
 Fertilizers <- as.vector(apply(Fertilizers,2,FUN=sum))
 
 for (j in 1:164) {
