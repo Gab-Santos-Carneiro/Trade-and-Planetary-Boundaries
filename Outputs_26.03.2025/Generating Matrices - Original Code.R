@@ -29,7 +29,7 @@ bucketlist(region="") # Check if it's alright
 ### Organizing inital data
 rm(list=ls())
 year = 2021
-bucket <- "projet-esteem"
+bucket <- "FILL WITH YOUR INFORMATION"
 set_wd <- "Gloria/data/057"
 
 # Loading matrices 
